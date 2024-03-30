@@ -495,7 +495,7 @@ class MultiNeuronSimulation():
                 
                 # store the vectorized function that defines the sitmulus
                 # set output type to float to avoid numerical problems with small output numbers
-                self.all_current_functions[neuron_idx] = np.vectorize(current_function_list[neuron_idx],otypes=[np.float])
+                self.all_current_functions[neuron_idx] = np.vectorize(current_function_list[neuron_idx],otypes=[float])
 
                 # note down that this neuron is a neuron we stimulate in the simulatino 
                 self.stimulated_neurons_idx.append(neuron_idx)
